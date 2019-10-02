@@ -1,4 +1,5 @@
 <?php
+use phplite\Bootstrap\App;
 
 /**
  * Here we will run our APP.
@@ -16,12 +17,21 @@
 
     /**
      * Run the application.
+     * &&
+     * Setting app definitions.
      * 
      * @return void
      */
-    public function run()
+    public static function run()
     {
-        echo "Running the app";
+        # define Root path.
+        define('ROOT', realpath(__DIR__.'/..'));
+
+        # define Directory Separator (DS).
+        define('DS', DIRECTORY_SEPARATOR);
+        
+        # Run the App.
+        App::run();
     }
  }
  

@@ -6,9 +6,33 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit549c83c89b51934d4075c0531b858b6c
 {
+    public static $prefixLengthsPsr4 = array (
+        'p' => 
+        array (
+            'phplite\\' => 8,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'phplite\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/phplite/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit549c83c89b51934d4075c0531b858b6c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit549c83c89b51934d4075c0531b858b6c::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
