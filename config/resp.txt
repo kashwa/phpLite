@@ -1,0 +1,2 @@
+This class will be responsible for:
+*   Here will be configs for DB or whatever configs we will use.

@@ -1,0 +1,2 @@
+This class will be responsible for:
+*   All Views of the project. (FRONT-END)

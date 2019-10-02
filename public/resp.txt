@@ -1,0 +1,4 @@
+This class will be responsible for:
+*   contains [index.php, .htaccess, ANY ASSET.]
+
+index.php > file which project will start from, and each request will be handled from it.

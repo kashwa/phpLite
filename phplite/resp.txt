@@ -1,0 +1,5 @@
+This class will be responsible for:
+*   Core classes > in SRC/.
+
+After making this as a package it will be in vendor, but during development (now), it will be here.
+it will contain SRC/ folder. which contains core classes.

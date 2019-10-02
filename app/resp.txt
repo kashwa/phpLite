@@ -1,0 +1,2 @@
+This class will be responsible for:
+*   Classes dev will use after making framework (Controllers / Models / Middleware).

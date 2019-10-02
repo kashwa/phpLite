@@ -1,0 +1,2 @@
+This class will be responsible for:
+*   All urls of the project.
