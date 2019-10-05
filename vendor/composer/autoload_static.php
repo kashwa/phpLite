@@ -11,6 +11,14 @@ class ComposerStaticInit549c83c89b51934d4075c0531b858b6c
         array (
             'phplite\\' => 8,
         ),
+        'W' => 
+        array (
+            'Whoops\\' => 7,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -21,6 +29,14 @@ class ComposerStaticInit549c83c89b51934d4075c0531b858b6c
         'phplite\\' => 
         array (
             0 => __DIR__ . '/../..' . '/phplite/src',
+        ),
+        'Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'App\\' => 
         array (

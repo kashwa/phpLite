@@ -2,6 +2,8 @@
 
 namespace phplite\Bootstrap;
 
+use phplite\Exceptions\whoops;
+
 class App {
 
     /**
@@ -14,10 +16,12 @@ class App {
     /**
      * Run the application.
      *
-     * @return  [type]  [return description]
+     * @return void [type]  [return description]
+     * @throws \Exception
      */
     public static function run()
     {
+        whoops::handle();
         throw new \Exception("Continue from here, installing WHOOPS!");
     }
 }

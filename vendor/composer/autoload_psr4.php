@@ -7,5 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'phplite\\' => array($baseDir . '/phplite/src'),
+    'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'App\\' => array($baseDir . '/app'),
 );
