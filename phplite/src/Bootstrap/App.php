@@ -2,7 +2,9 @@
 
 namespace phplite\Bootstrap;
 
+use phplite\Cookie\Cookie;
 use phplite\Exceptions\whoops;
+use phplite\Session\Session;
 
 class App {
 
@@ -21,7 +23,17 @@ class App {
      */
     public static function run()
     {
+        # Register whoops.
         whoops::handle();
-        throw new \Exception("Continue from here, installing WHOOPS!");
+
+        # Start session.
+        Session::start();
+
+        # Testing Cookies.
+        //echo Cookie::set('name', 'aabed');
+        //Cookie::destroy();
+        echo '<pre>';
+            print_r(Cookie::all());
+        echo '</pre>';
     }
 }
