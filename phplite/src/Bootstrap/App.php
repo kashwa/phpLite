@@ -4,6 +4,7 @@ namespace phplite\Bootstrap;
 
 use phplite\Cookie\Cookie;
 use phplite\Exceptions\whoops;
+use phplite\Http\Server;
 use phplite\Session\Session;
 
 class App {
@@ -29,11 +30,9 @@ class App {
         # Start session.
         Session::start();
 
-        # Testing Cookies.
-        //echo Cookie::set('name', 'aabed');
-        //Cookie::destroy();
-        echo '<pre>';
-            print_r(Cookie::all());
-        echo '</pre>';
+        echo Server::get('DOCUMENT_ROOT');
+        echo "<pre>";
+        print_r(Server::path_info("http://localhost:8080/phplite/public/"));
+        echo "</pre>";
     }
 }
