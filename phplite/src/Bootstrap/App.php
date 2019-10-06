@@ -2,8 +2,10 @@
 
 namespace phplite\Bootstrap;
 
+use Exception;
 use phplite\Cookie\Cookie;
 use phplite\Exceptions\whoops;
+use phplite\Http\Request;
 use phplite\Http\Server;
 use phplite\Session\Session;
 
@@ -20,7 +22,7 @@ class App {
      * Run the application.
      *
      * @return void [type]  [return description]
-     * @throws \Exception
+     * @throws Exception
      */
     public static function run()
     {
@@ -30,9 +32,11 @@ class App {
         # Start session.
         Session::start();
 
-        echo Server::get('DOCUMENT_ROOT');
+        # Handle request.
+        Request::handle();
+
         echo "<pre>";
-        print_r(Server::path_info("http://localhost:8080/phplite/public/"));
+        print_r(Request::get('asd'));
         echo "</pre>";
     }
 }
